@@ -1,0 +1,46 @@
+{
+  "private": true,
+  "name": "auto_uploader",
+  "description": "My application description",
+  "version": "1.0.0",
+  "author": "vik-splav <splavnykviktor@gmail.com>",
+  "main": "app/background.js",
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "build:mac": "nextron build --mac --x64",
+    "build:macarm": "nextron build --mac --arm64",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "electronWebpack": {
+    "renderer": {
+      "webSecurity": false
+    }
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.1.0",
+    "firebase": "^10.1.0",
+    "firebase-admin": "^11.10.1",
+    "fs": "^0.0.1-security",
+    "node-mac-permissions": "^2.3.0",
+    "path": "^0.12.7",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "@types/uuid": "^9.0.2",
+    "autoprefixer": "^10.4.7",
+    "electron": "^21.3.3",
+    "electron-builder": "^23.6.0",
+    "next": "^12.3.4",
+    "nextron": "^8.5.0",
+    "postcss": "^8.4.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "request": "^2.88.2",
+    "tailwindcss": "^3.1.8"
+  }
+}
