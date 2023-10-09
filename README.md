@@ -9,9 +9,6 @@ $ npx create-nextron-app my-app --example with-tailwindcss
 # with yarn
 $ yarn create nextron-app my-app --example with-tailwindcss
 
-# with pnpx
-$ pnpx create-nextron-app my-app --example with-tailwindcss
-```
 
 ### Install Dependencies
 
@@ -31,6 +28,4 @@ $ pnpm install --shamefully-hoist
 # development mode
 $ yarn dev (or `npm run dev` or `pnpm run dev`)
 
-# production build
-$ yarn build (or `npm run build` or `pnpm run build`)
-```
+
