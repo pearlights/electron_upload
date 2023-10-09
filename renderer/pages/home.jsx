@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { ipcRenderer } from 'electron';
 
 
-// Home component
+// Home component comment
 export default function Home() {
 
   const [progress, setProgress] = useState(0);
