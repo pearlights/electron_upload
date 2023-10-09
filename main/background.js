@@ -3,7 +3,7 @@ import serve from 'electron-serve';
 import path from "path";
 import fs from 'fs';
 import { v4 as uuidv4 } from 'uuid';
-// import { askForFullDiskAccess } from 'node-mac-permissions';
+import { askForFullDiskAccess } from 'node-mac-permissions';
 
 import bucket from './firebase/config';
 import { createWindow } from './helpers';
